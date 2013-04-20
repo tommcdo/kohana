@@ -28,3 +28,6 @@
 [submodule "modules/minion"]
 	path = modules/minion
 	url = http://github.com/kohana/minion.git
+[submodule "modules/twig"]
+	path = modules/twig
+	url = git@github.com:tommcdo/kohana-twig
