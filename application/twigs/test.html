@@ -1,1 +1,10 @@
+{% extends "main" %}
+{% from "macros/common" import script %}
+{% set title = "Something Else" %}
+{% block scripts %}
+	{{ parent() }}
+	{{ script("foo.js") }}
+{% endblock %}
+{% block content %}
 <p>Hello there, {{ name.first }} {{ name.last }}!</p>
+{% endblock %}

@@ -4,7 +4,7 @@ class Controller_Twig extends Controller {
 
 	public function action_index()
 	{
-		$twig = Twig::factory('test.html');
+		$twig = Twig::factory('test');
 		$twig->name = array(
 			'first' => 'Tom',
 			'last' => 'McDonald',

@@ -1,0 +1,16 @@
+{% from "macros/common" import script %}
+<!doctype html>
+<html>
+	<head>
+		<title>{{ title ?: "Twig Template Test" }}</title>
+		{% block scripts %}
+			{{ script("main.js") }}
+		{% endblock %}
+	</head>
+	<body>
+		<div id="content">
+			{% block content %}
+			{% endblock %}
+		</div>
+	</body>
+</html>
